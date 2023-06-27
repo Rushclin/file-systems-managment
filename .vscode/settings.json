@@ -1,0 +1,15 @@
+{
+  "C_Cpp.errorSquiggles": "disabled",
+  "files.associations": {
+    "get_system_info.h": "c",
+    "string.h": "c",
+    "get_partition_info.h": "c",
+    "get_disk_total_size.h": "c",
+    "get_disk_serial_number.h": "c",
+    "get_disk_model.h": "c",
+    "get_disk_health.h": "c",
+    "get_disk_free_size.h": "c",
+    "execute_command.h": "c",
+    "partition.h": "c"
+  }
+}
