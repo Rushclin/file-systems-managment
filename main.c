@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "structs/partition.h"
-
 #include "headers/execute_command.h"
 #include "headers/get_disk_free_size.h"
 #include "headers/get_disk_health.h"
@@ -53,12 +51,8 @@ int main(int argc, char *argv[])
   else
     printf("Impossible d'obtenir la taille libre du disque %s\n", device);
 
-  Partition partitions[MAX_PARTITIONS];
-  int count = get_partition_info(device, partitions, MAX_PARTITIONS);
-  if (count > 0)
-    print_partitions(partitions, count);
-  else
-    printf("Aucune partition trouvée pour le disque %s\n", device);
+  // Lister les partitions sur le disque
+  liste_partitions();
 
   return 0;
 }

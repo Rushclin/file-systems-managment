@@ -10,6 +10,7 @@
     "get_disk_health.h": "c",
     "get_disk_free_size.h": "c",
     "execute_command.h": "c",
-    "partition.h": "c"
+    "partition.h": "c",
+    "stdlib.h": "c"
   }
 }
