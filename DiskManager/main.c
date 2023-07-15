@@ -25,17 +25,17 @@ int main()
     manager.nb_disques = 0;
     manager.disque_actif = NULL;
 
-    // Utilisation des fonctions pour gérer les disques
+    // Utilisation des fonctions pour gérer le disque
 
     available_disk();
+    ajout_disk(&manager, "/dev/sdb1");
+    // retirer_disk(&manager, "/dev/sdb1");
     lister_disques(&manager);
-    ajout_disk(&manager, "/dev/sda");
-    // retirer_disk(&manager, "/dev/sda");
-    // set_active_disk(&manager, "/dev/sdb");
-    // format_disk(&manager, "ext4", 10);
+    set_active_disk(&manager, "/dev/sdb1");
+    //  format_disk(&manager, "ext4", 10);
     // monter_partition(&manager, "/dev/sdb1", "/mnt");
     // demonter_partition("/dev/sdb1");
-    // delete_partition(&manager, 1);
-    // create_partition(&manager, "ext4", 2, 20);
+    //  delete_partition(&manager, 1);
+    // create_partition(&manager, "ntfs", 2, 20);
     return 0;
 }
